@@ -1,0 +1,73 @@
+* {
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
+}
+
+/*The start of navbar CSS*/
+.logo {
+    border-radius: 50%;
+    height: 15vh;
+    width: auto;
+    max-height: 200px; 
+   }
+
+.navbar {
+background-color: blue;
+height: 20vh;
+}
+
+.navbar div {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+
+
+
+
+
+/*The end of navbar CSS*/
+
+
+/*Hero image for index.html*/
+#index {
+    background-image: url(/Images/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: fixed;
+    z-index: -1;
+    
+}
+
+#index h1,h2 {
+    color: white;
+
+}
+
+#indexhero {
+    min-height: 80vh;;
+    flex: 1; /* Takes remaining space after navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    height: 50%;
+    width: 50%;
+}
