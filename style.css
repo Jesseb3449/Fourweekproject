@@ -48,20 +48,23 @@ height: 20vh;
 }
 
 #indexmain {
+    display: flex;
+}
+
+#hero-content-wrapper {
     min-height: 80vh;;
     flex: 1; /* Takes remaining space after navbar */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .hero-content {
+    
+    
    
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     
-    align-items: center;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px) saturate(180%);
     -webkit-backdrop-filter: blur(15px) saturate(180%);
