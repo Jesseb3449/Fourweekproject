@@ -46,5 +46,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
+    position: relative;
     height: 100vh;
+    z-index: 1;
+    
+ }
+
+ .hero-user-account {
+  
+    background-color: var(--user-interaction-color);
+    height: 50vh;
+    width: 30vw;
+    border-radius: 4%;
+   
+    
  }
