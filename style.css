@@ -14,12 +14,14 @@
  }
 
  #navbar-index{
- display: flex;
+   width: 100%;
+   background-color: var(--nav-bar-color);
+   display: flex;
  flex-direction: row;
  justify-content: center;
  max-width: none;
- width: 100%;
- background-color: var(--nav-bar-color);
+ 
+ 
  }
  
  .navbar-logo {
@@ -50,15 +52,78 @@
     position: relative;
     height: 100vh;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
  }
 
  .hero-user-account {
-  
-    background-color: var(--user-interaction-color);
-    height: 50vh;
-    width: 30vw;
-    border-radius: 4%;
+   background-color: var(--user-interaction-color);
+   height: 50vh;
+   width: 35vw;
+   border-radius: 4%;
+   border-color: black;
+   border: 0.12rem solid black;
+   font-family: 'Krona One', sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
    
-    
- }
+}
+
+
+.Login-Button, .SignUp-Button {
+   background-color: var(--button-color);
+   height: 7vh;
+   width: 10vw;
+   color:white;
+   text-decoration: none;
+   border-radius: 55%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Login-Button:visited, .SignUp-Button:visited {
+   color:white;
+}
+
+#main-index {
+   background-color: var(--background-color);
+   height: 50vh;
+   width: 100%;
+   padding-top: 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+#description {
+   
+   font-family: 'Krona One', sans-serif;
+   color: white;
+   text-align: left;
+   height: 20vh;
+   width: 57vw;
+}
+
+.sub-hero-section {
+   background-image: url(/Images/Rectangle\ 11.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   position: relative;
+   height: 100vh;
+   z-index: 1;
+
+}
+
+/*Animation Section*/
+
+@keyframes scrollPicture {
+   to {}
+}
