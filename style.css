@@ -122,8 +122,34 @@
 
 }
 
+.picture-wrapper {
+   position: absolute;
+   width: 100%;
+}
+
+.picture-track {
+   display: flex;
+   align-items: center;;
+}
+
+.moving-pictures {
+  padding-top: 5%;
+}
+
+.images {
+   
+   height: 30vh;
+   width: 30vw;
+   border-radius: 20%;
+}
+
 /*Animation Section*/
 
-@keyframes scrollPicture {
-   to {}
+@keyframes scrollPicture { /*Also borrowed from Bioshield*/
+   0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
