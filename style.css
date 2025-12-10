@@ -129,11 +129,15 @@
 
 .picture-track {
    display: flex;
-   align-items: center;;
+   align-items: center;
+   justify-content: center;
+   justify-content: space-between;
 }
 
 .moving-pictures {
   padding-top: 5%;
+  animation: scrollPicture 60s linear infinite;
+  
 }
 
 .images {
