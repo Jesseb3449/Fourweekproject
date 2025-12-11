@@ -11,6 +11,7 @@
     --button-color: #374047;
     --logo-color-white: #F4F9F9;
     --logo-color-silver: #B8B8B8;
+    --text-box-color: #C2C2C2;
  }
 
  /*Start of Nav-Bar CSS*/
@@ -112,7 +113,6 @@
 }
 
 #description {
-   
    font-family: 'Krona One', sans-serif;
    color: white;
    text-align: left;
@@ -143,7 +143,7 @@
    align-items: center;
    justify-content: center;
    justify-content: space-between;
-   animation: scrollPicture 10s linear infinite;
+   animation: scrollPicture 25s linear infinite;
 }
 
 .picture-wrapper-2 {
@@ -160,6 +160,7 @@
 
 .moving-pictures {
 padding-top: 5%;  
+display: block;
   
 }
 
@@ -167,20 +168,79 @@ padding-top: 5%;
    
    height: 30vh;
    width: 30vw;
-   border-radius: 20%;
+   border-radius: 17%;
+   flex-shrink: 0;
 }
 
 
 /*End of Index.html CSS*/
 
 
+/*Start of Login.html CSS*/
+.hero-section-login {
+   background-image: url(/Images/Rectangle\ 2.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   position: relative;
+   height: 100vh;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.input-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   flex: 1;
+   
+}
+
+#email {
+   height: 7vh;
+   width: 12vw;
+   border-radius: 15%;
+   text-align: center;
+   font-family: 'Krona One', sans-serif;
+   background-color: var(--text-box-color);
+}
+
+#password {
+   height: 7vh;
+   width: 12vw;
+   border-radius: 15%;
+   text-align: center;
+   font-family: 'Krona One', sans-serif;
+   background-color: var(--text-box-color);
+}
+
+.login-submit {
+   text-align: center;
+   text-decoration: none;
+   font-family: 'Krona One', sans-serif;
+   background-color: var(--button-color);
+   color: white;
+   
+}
+
+.login-with-accounts {
+   display: flex;
+   
+}
+
+/*End of Login.html CSS*/
+
 /*Animation Section*/
 
 @keyframes scrollPicture { /*Also borrowed from Bioshield*/
    0% {
-      transform: translateX(0);
+      transform: translateX(100vw);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
     }
 }
