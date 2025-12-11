@@ -16,7 +16,7 @@
 
  /*Start of Nav-Bar CSS*/
  
- #navbar-index{
+ #navbar-basic{
    width: 100%;
    background-color: var(--nav-bar-color);
    display: flex;
@@ -233,6 +233,24 @@ display: block;
 }
 
 /*End of Login.html CSS*/
+
+/*Start of signup.html*/
+.hero-section-Sign-Up {
+   background-image: url(/Images/Rectangle\ 3.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   position: relative;
+   height: 100vh;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*End of signup.html*/
+
+
 
 /*Animation Section*/
 
