@@ -13,6 +13,8 @@
     --logo-color-silver: #B8B8B8;
  }
 
+ /*Start of Nav-Bar CSS*/
+ 
  #navbar-index{
    width: 100%;
    background-color: var(--nav-bar-color);
@@ -42,7 +44,15 @@
     padding: 5px;
  }
 
+ /*End of Nav-Bar CSS*/
 
+ /*Start of Index.html CSS*/
+ 
+#index-html-body {
+   overflow-x: hidden;
+}
+ 
+ 
  .hero-section {
     background-image: url(/Images/hero.jpeg);
     background-repeat: no-repeat;
@@ -119,11 +129,12 @@
    position: relative;
    height: 100vh;
    z-index: 1;
-
+   
 }
 
 .picture-wrapper {
    position: absolute;
+   overflow: hidden;
    width: 100%;
 }
 
@@ -132,11 +143,23 @@
    align-items: center;
    justify-content: center;
    justify-content: space-between;
+   animation: scrollPicture 10s linear infinite;
+}
+
+.picture-wrapper-2 {
+   position: absolute;
+   width: 100%;
+}
+
+.picture-track-2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   justify-content: space-between;
 }
 
 .moving-pictures {
-  padding-top: 5%;
-  animation: scrollPicture 60s linear infinite;
+padding-top: 5%;  
   
 }
 
@@ -147,13 +170,17 @@
    border-radius: 20%;
 }
 
+
+/*End of Index.html CSS*/
+
+
 /*Animation Section*/
 
 @keyframes scrollPicture { /*Also borrowed from Bioshield*/
    0% {
-      transform: translateX(100vw);
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
 }
