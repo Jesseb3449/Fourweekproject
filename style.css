@@ -248,6 +248,11 @@ display: block;
    justify-content: center;
    align-items: center;
 }
+
+#checkbox-section {
+   display: flex;
+}
+
 /*End of signup.html*/
 
 
