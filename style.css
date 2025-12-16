@@ -16,6 +16,17 @@
 
  /*Start of Nav-Bar CSS*/
  
+ #navbar-normal {
+   width: 100%;
+   min-width: 100%;
+   width: 100%;
+   background-color: var(--nav-bar-color);
+   display: flex;
+   flex-direction: row;
+   
+   min-width: 100%;
+ }
+
  #navbar-basic{
    width: 100%;
    background-color: var(--nav-bar-color);
@@ -44,6 +55,13 @@
     border-radius: 50%;
     padding: 0.45rem;
  }
+
+#navbar-ul {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
 
  /*End of Nav-Bar CSS*/
 
@@ -258,11 +276,11 @@ flex-shrink: 0;
 }
 
 .input-section-sign {
-   height: 100%;
    display: flex;
    flex-direction: column;
+   justify-content: space-around;
    align-items: center;
-   justify-content: space-between;
+   gap: 1.5rem;
  
    
 }
