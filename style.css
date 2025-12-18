@@ -68,12 +68,11 @@
 
 #navbar-ul {
    list-style: none;
-
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   gap: clamp(1rem,3vw,3rem);
+   gap: clamp(5rem,15vw,15rem);
   
 }
 
